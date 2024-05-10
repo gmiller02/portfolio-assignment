@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Clash Display';
+    src: url('fonts/Fonts/TTF/ClashDisplay-Variable.ttf') format('truetype'); 
+}
+
+body {
+    font-family: 'Clash Display'; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #8E4A49;
+    color: #8E4A49;
+    padding: 240px 20px; 
+    text-align: center;
+    position: relative; 
+    font-family: 'Clash Display', sans-serif; 
+}
+
+.header-box {
+    display: inline-block;
+    padding: 20px 80px;
+    border-radius: 10px;
+    background-color: #E4C9C9; 
+}
+
+.description-box {
+    padding: 10px 10px; 
+    border-radius: 10px;
+    background-color: #8E4A49;
+    margin-top: 20px; 
+    border: 2px solid #E4C9C9; 
+    color: #E4C9C9;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.header-box h1,
+.header-box p {
+    margin: 0;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: #E4C9C9;
+    text-decoration: none;
+}
+
+.scroll-arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    color: #E4C9C9;
+}
+
+.scroll-arrow i:hover,
+.scroll-arrow i:active {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project {
+    margin-bottom: 40px;
+    border: 1px solid #E4C9C9;
+    padding: 20px;
+    color: #5F464B;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+.project-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-overlay img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Add transition for filter property */
+}
+
+.project-overlay:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #8E4A49; /* Dark red shade */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-overlay:hover:before {
+    opacity: 0.7; /* Increase opacity on hover to make overlay darker and more opaque */
+}
+
+.project-overlay:hover .project-description {
+    opacity: 1;
+}
+
+.project-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Change default text color to black */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #8E4A49;
+    color: #E4C9C9;
+    text-align: center;
+    padding: 20px;
+}

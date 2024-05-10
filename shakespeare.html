@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Development Website Handin</title>
+        <link rel="stylesheet" type="text/css" href="shakespeare.css" />
+        </head>  
+        <body>
+
+       
+<div class="header">
+  <h1><a href="https://development-assignment-kappa.vercel.app/">Shakespeare Reading Tracker</a></h1>
+</div>
+
+<div class="content">
+
+    <h3>Comparative Analysis:</h3>
+
+  <p> Along with a good portion of the internet, I have recently started logging my recent media consumption, including movies on 
+    letterboxd and books on Goodreads, which I have found fun and enriching. As part of a project for my UI/UX design class, I was 
+    tasked to create a sorting aggretator website, and I decided to create a Goodreads-style reading tracker for Shakespeare plays
+    and poems, which are a passion of mine as a reader and actor. My goal was to refine my React skills while examining what types of 
+    design are appealing to an audience that is perhaps more humanities rather than STEM-oriented. 
+ </p>  
+
+ <p>
+    I was given three weeks to complete this assignment, and spent the entierity of the first one researching the design of
+    Goodreads and other reading tracker applications to gain a better sense of what my design was to resemble.
+ </p>
+
+ <figure class="image-container">
+    <img src="goodreads.png" alt="Goodreads profile">
+    <figcaption>Goodreads Profile</figcaption>
+</figure>
+ 
+<p>
+    As I conducted research, I discovered that Goodreads was far from the only reading tracker 
+    application out there. I found a plethora of blog articles and reddit snark pages that complained about Goodreads' user
+    interface, calling it clunky and outdated. I examined two competitor websites, Storygraph and LibraryThing. 
+</p>
+
+<figure class="image-container">
+    <img src="storygraph.png" alt="Storygraph profile">
+    <figcaption>Storygraph Profile</figcaption>
+</figure>
+
+<figure class="image-container">
+    <img src="librarything.png" alt="LibraryThing profile">
+    <figcaption>LibraryThing Profile</figcaption>
+</figure>
+
+<p>
+    In summary, I enjoyed the style and simplistic nature of the Storygraph profile tagging system, but found that 
+    Goodreads and LibraryThing's "outdated" horizontal profile layout and warmer color scheme easier to navigate. I did not
+    feel like Storygraph had found a way to make their web app scrolling interface intuitive for use on a monitor. 
+</p> 
+
+<h3>Design Process:</h3>
+
+
+<p>
+    I spent the remaining two weeks of my project planning what I wanted my website to resemble based on my comparative analysis. 
+</p>
+
+<p>
+    I thought that 
+    the warm color palettes of Goodreads and LibraryThing were preferable to the dark color scheme of Storygraph, as they 
+    recalled the pages of books and the wood of libraries. I also wanted to display as much of the functionality of the website as possible,
+     so I decided to display all of the sort and filtering buttons at the top of the website. 
+</p>
+
+<p>
+    Additionally,
+    the rules of the assignment dictated that I practice my React skills by building two sort categories and an aggregator. I made the aggregator
+    a 'favorites' category. This category was inspired by the reading tracker websites I researched, which all had an 
+    automatically generated category of 'favorites' that you could sort certian books under. 
+</p>
+
+<figure class="image-container">
+    <img src="favorites.png" alt="favoriting system">
+    <figcaption>Favorite plays and poems display in the "Favorites" section</figcaption>
+</figure>
+
+<p>
+    I  wanted to make sure the aggregator was
+    visible as soon as one loaded the website, so the user could see its purpose immediately. I also wanted the favoriting function to look
+    visually distinct, so I implemented a logo so that the user can ‘heart’ certain items, which was inspired by Spotify. If I continued to build this website out, the ‘favorites’ 
+    would be an automatically generated category like it is currently, and the user would have to create the other aggregators themselves. That would 
+    comprise the tagging system.
+</p>
+
+<figure class="image-container">
+    <img src="example_card.png" alt="example card" class="smaller-image">
+    <figcaption>Play information card</figcaption>
+</figure>
+
+<p>
+    I decided to sort the plays by the year they debuted 
+in ascending order, and filter them in two categories: filtering them by separating them into plays and poems, and then filtering the specific plays by genre:
+comedy, tragedy, and history. 
+</p>
+
+<figure class="image-container">
+    <img src="buttons.png" alt="example card" >
+    <figcaption>Menu</figcaption>
+</figure>
+
+<p>
+    I wanted to make as many items on the website displayable without the user needing to scroll. However, Shakespeare wrote a great number of plays
+    and poems, and unfortunatly they cannot all be displayed at once without the font being smaller, which would impact accessibility. Additionally, the simplistic look
+of the buttons is also intentional. I enjoyed the older feel of the buttons and menus on goodreads and LibraryThing. I made the text and buttons larger as to not impact accessibility,
+but otherwise I wanted to focus on the simplistic and nostalgic design as well.
+</p>
+
+<h3>Takeaways: </h3>
+
+<p> The following project encouraged me to develop two sets of skills: the first, 
+    practicing comparative analysis by comparing the design of competitor websites. 
+    The second, creating functional aggregators using React in order to develop and 
+    practice frontend development.
+    I also highly enjoyed creating this website as it was a way for me to combine computer science with my extracurricular, non-STEM interests! 
+</p>  
+
+<p>
+    If you haven't already, check out the website <a href="https://development-assignment-kappa.vercel.app/">here</a>!
+</p>
+
+</div>
+</body>
+</html>

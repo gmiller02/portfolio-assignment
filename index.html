@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/86a8d61395.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <div class="header-box">
+        <h1><i class="fa-solid fa-book-open"></i>     Grace Miller     <i class="fa-solid fa-book-open"></i></h1>
+    <p>Web Developer | Technical Writer</p>
+    </div>
+    <div class="description-box">
+        <p>I'm Grace! I'm a web developer and technical writer with an interest in combining my love of literature with computer science.</p>
+        <p>Check out my work below!</p>
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    
+    <div class="scroll-arrow" onclick="scrollToProjects()">
+        <i class="fa-solid fa-angle-down fa-3x"></i> 
+    </div>
+</header>
+
+<div class="container">
+
+    <section class="project">
+        <a href="shakespeare.html"> 
+            <div class="project-overlay">
+                <img src="favorites.png" alt="Project 1">
+                <div class="project-description">
+                    <h2>Shakespeare Reading Tracker</h2>
+                    <p>React | Competative Analysis</p>
+                </div>
+            </div>
+        </a>
+    </section>
+    
+    <section class="project">
+        <a href="partiful.html"> 
+            <div class="project-overlay">
+                <img src="partiful_background.png" alt="Partiful Profile Design">
+                <div class="project-description">
+                    <h2>Partiful Profile Design</h2>
+                    <p>Collaborative Design | Startup | Prototype</p>
+                </div>
+            </div>
+        </a>
+    </section>
+
+    <section class="project">
+        <a href="marxists.html"> 
+            <div class="project-overlay">
+                <img src="computer_screen.png" alt="Marxists website redesign">
+                <div class="project-description">
+                    <h2>Marxists.org Website Redesign</h2>
+                    <p>Responsive Redesign | Digital Humanities</p>
+                </div>
+            </div>
+        </a>
+    </section>
+
+    
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Grace Miller. All rights reserved.</p>
+</footer>
+
+<script>
+    function scrollToProjects() {
+        document.querySelector('.container').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>

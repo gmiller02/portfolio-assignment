@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Clash Display';
+    src: url('fonts/Fonts/TTF/ClashDisplay-Variable.ttf') format('truetype'); 
+}
+
+body {
+    margin: 0; 
+}
+
+.header {
+    background-color: #8E4A49;
+    color: #E4C9C9;
+    padding: 30px 20px; 
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    font-family: 'Clash Display', sans-serif; 
+}
+
+.header a {
+    color: inherit;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header a:hover {
+    color: #fff; 
+    transform: translateY(-2px);
+}
+
+.content {
+    font-family: 'Clash Display'; 
+    margin: 50px;
+    padding: 0;
+    color: #000000;
+    padding-top: 150px; 
+    padding-left: 40px; 
+    padding-right: 40px; 
+}
+
+.image-container {
+    text-align: center; 
+    margin: 20px; 
+}
+
+img {
+    border: 2px solid #8E4A49; 
+    width: 600px; 
+    height: auto; 
+}
+
+figcaption {
+    margin-top: 10px; 
+    color: #8E4A49; 
+    font-weight: bold; 
+}
